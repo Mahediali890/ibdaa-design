@@ -13,6 +13,12 @@
 
 # misc
 .DS_Store
+server/.env
+.claude/
+CLAUDE.md
+
+# large media files
+*.mp4
 .env.local
 .env.development.local
 .env.test.local

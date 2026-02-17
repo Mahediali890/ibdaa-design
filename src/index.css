@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    content-visibility: auto;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    background-color: #0C1821;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  ::selection {
+    background-color: #C9A96E;
+    color: #FFFFFF;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0C1821;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C9A96E;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D9BE8E;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .page-padding {
+    @apply px-6 md:px-12 lg:px-24;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-20 md:py-28;
+  }
+
+  .page-hero {
+    @apply relative min-h-[50vh] flex items-center justify-center overflow-hidden;
+  }
+
+  .section-tag {
+    @apply inline-block font-body text-accent text-xs tracking-[0.3em] uppercase font-medium;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight;
+  }
+
+  .section-subtitle {
+    @apply font-body text-lg text-white/60 font-light leading-relaxed;
+  }
+
+  .accent-line {
+    @apply w-16 h-[2px] bg-accent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-display text-sm font-medium tracking-wider uppercase hover:bg-accent-light transition-all duration-300 hover:shadow-lg hover:shadow-accent/20;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white font-display text-sm font-medium tracking-wider uppercase hover:border-accent hover:text-accent transition-all duration-300;
+  }
+
+  .card-dark {
+    @apply bg-navy-800 border border-white/5 rounded-2xl overflow-hidden hover:border-accent/20 transition-all duration-500;
+  }
+
+  .gradient-overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-navy-900/60 via-navy-900/40 to-navy-900/90;
+  }
 }
