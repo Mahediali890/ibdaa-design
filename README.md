@@ -1,46 +1,124 @@
-# ibdaa-design
+# IBDA'A Design Studio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A premium architecture and interior design portfolio website showcasing modern residential and commercial projects.
 
-## Available Scripts
+**[View Live Site](https://mahediali890.github.io/ibdaa-design)**
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+IBDA'A Design Studio is a full-service architecture and interior design firm based in Nadiad, Gujarat. This website serves as the studio's digital portfolio, featuring project showcases, service offerings, and a contact system for client inquiries.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Multi-Page Portfolio** — Home, About, Services, Projects, and Contact pages
+- **Project Showcase** — Filterable gallery with detailed project views (Architecture, Interior, Renovation)
+- **Smooth Animations** — Scroll-reveal effects, page transitions, and interactive hover states
+- **Responsive Design** — Optimized for desktop, tablet, and mobile devices
+- **Contact Form** — Working email system with Gmail SMTP integration
+- **Security Hardened** — Helmet.js, CSRF protection, rate limiting, input validation, and anti-spam honeypot
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Frontend | Backend | Styling | Animation |
+|----------|---------|---------|-----------|
+| React 19 | Express.js | Tailwind CSS 3 | Framer Motion |
+| React Router | Nodemailer | Google Fonts | ScrollReveal |
 
-### `npm run build`
+**Additional:** Helmet.js, express-validator, express-rate-limit, react-icons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v18 or higher)
+- npm
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clone the repository
+git clone https://github.com/Mahediali890/ibdaa-design.git
+cd ibdaa-design
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running Locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Start the React development server
+npm start
 
-## Learn More
+# Start the backend server (in a separate terminal)
+npm run server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Or run both together
+npm run dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app will open at [http://localhost:3000](http://localhost:3000).
+
+### Environment Variables
+
+Create a `server/.env` file for the contact form email service:
+
+```env
+EMAIL_USER=your-email@gmail.com
+EMAIL_APP_PASSWORD=your-gmail-app-password
+CONTACT_EMAIL_RECIPIENT=recipient@example.com
+CONTACT_PHONE=+91 XXXXX XXXXX
+CONTACT_ADDRESS=Your Address Here
+```
+
+### Build & Deploy
+
+```bash
+# Create production build
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## Project Structure
+
+```
+ibdaa/
+├── public/              # Static assets and index.html
+├── server/              # Express.js backend
+│   ├── controllers/     # Route handlers
+│   ├── middleware/       # Validation, error handling
+│   ├── services/        # Email service
+│   └── server.js        # Server entry point
+├── src/
+│   ├── assets/          # Images and media
+│   ├── components/
+│   │   ├── common/      # ScrollReveal, PageTransition
+│   │   ├── layout/      # Navbar, Footer, BottomNav
+│   │   └── sections/    # Hero, About, Services, Projects, Contact
+│   ├── data/            # Project data
+│   ├── pages/           # Page components
+│   ├── services/        # API service
+│   └── App.js           # Root component with routing
+└── package.json
+```
+
+## Color Palette
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Charcoal / Navy | `#1A1A1A` | Backgrounds |
+| Warm Gold | `#C9A96E` | Accents, CTAs |
+| Warm White | `#F5F0EB` | Text, surfaces |
+
+## Contact
+
+**IBDA'A Design Studio**
+- Phone: +91 84900 59240
+- Email: mominfarmanali292@gmail.com
+- Address: D2, City Centre Complex, Marida Bhagol, Nadiad, Gujarat 387001
+
+## License
+
+This project is proprietary. All rights reserved.
