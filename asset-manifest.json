@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ibdaa-design/static/css/main.71734298.css",
+    "main.js": "/ibdaa-design/static/js/main.89241a21.js",
+    "static/js/453.b5fc27aa.chunk.js": "/ibdaa-design/static/js/453.b5fc27aa.chunk.js",
+    "static/media/showreel.mp4": "/ibdaa-design/static/media/showreel.0b29d24dcb8beb4d7071.mp4",
+    "static/media/sohel-house.jpg": "/ibdaa-design/static/media/sohel-house.28c25b59b411485c889d.jpg",
+    "static/media/arabian-villa.jpg": "/ibdaa-design/static/media/arabian-villa.62f2b9874b61c3fec778.jpg",
+    "static/media/compact-house-night.jpg": "/ibdaa-design/static/media/compact-house-night.5684baaf9c26b22911b4.jpg",
+    "static/media/contemporary-residence-angle.jpg": "/ibdaa-design/static/media/contemporary-residence-angle.1220d5f815d1d7f80b57.jpg",
+    "static/media/ammar-residence-evening.jpg": "/ibdaa-design/static/media/ammar-residence-evening.832ad86234a8fdd5cf09.jpg",
+    "static/media/contemporary-residence-day.jpg": "/ibdaa-design/static/media/contemporary-residence-day.6cab037e250ab430820a.jpg",
+    "static/media/modern-villa-front.jpg": "/ibdaa-design/static/media/modern-villa-front.1afd85035f77048a23f4.jpg",
+    "static/media/ammar-residence-night.jpg": "/ibdaa-design/static/media/ammar-residence-night.7df29d2d68d51fd8f8f9.jpg",
+    "static/media/modern-villa-angle.jpg": "/ibdaa-design/static/media/modern-villa-angle.909132c327871828cb37.jpg",
+    "index.html": "/ibdaa-design/index.html",
+    "main.71734298.css.map": "/ibdaa-design/static/css/main.71734298.css.map",
+    "main.89241a21.js.map": "/ibdaa-design/static/js/main.89241a21.js.map",
+    "453.b5fc27aa.chunk.js.map": "/ibdaa-design/static/js/453.b5fc27aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71734298.css",
+    "static/js/main.89241a21.js"
+  ]
+}
