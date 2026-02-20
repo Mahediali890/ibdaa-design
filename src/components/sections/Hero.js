@@ -1,19 +1,10 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import { HiArrowDown, HiPlay, HiX } from "react-icons/hi";
+import { HiArrowDown, HiOutlinePhone } from "react-icons/hi";
 import heroBg from "../../assets/images/projects/modern-villa-front.jpg";
-import showreel from "../../assets/videos/showreel.mp4";
 
 export default function Hero() {
-  const [videoOpen, setVideoOpen] = useState(false);
-  const videoRef = useRef(null);
-
-  const closeVideo = () => {
-    setVideoOpen(false);
-    if (videoRef.current) videoRef.current.pause();
-  };
-
   return (
     <section
       id="home"
@@ -82,15 +73,18 @@ export default function Hero() {
           >
             View Our Work
           </Link>
-          <button
-            onClick={() => setVideoOpen(true)}
-            className="flex items-center gap-3 px-10 py-4 border border-white/30 text-white font-body text-sm tracking-[0.15em] uppercase hover:border-accent hover:text-accent transition-all duration-300 group"
+          <Link
+            to="contact"
+            smooth
+            duration={800}
+            offset={-80}
+            className="cursor-pointer flex items-center gap-3 px-10 py-4 border border-white/30 text-white font-body text-sm tracking-[0.15em] uppercase hover:border-accent hover:text-accent transition-all duration-300 group"
           >
             <span className="w-10 h-10 rounded-full border-2 border-accent flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-300">
-              <HiPlay className="text-accent group-hover:text-white ml-0.5" />
+              <HiOutlinePhone className="text-accent group-hover:text-white" />
             </span>
-            Watch Showreel
-          </button>
+            Free Consultation
+          </Link>
         </motion.div>
       </div>
 
@@ -120,40 +114,6 @@ export default function Hero() {
         </Link>
       </motion.div>
 
-      {/* Video Modal */}
-      {videoOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="fixed inset-0 z-[100] bg-charcoal-900/95 flex items-center justify-center p-4 md:p-10"
-          onClick={closeVideo}
-        >
-          <button
-            onClick={closeVideo}
-            className="absolute top-6 right-6 text-white text-3xl hover:text-accent transition-colors z-10"
-          >
-            <HiX />
-          </button>
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            className="w-full max-w-5xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <video
-              ref={videoRef}
-              src={showreel}
-              controls
-              autoPlay
-              className="w-full shadow-2xl"
-              style={{ maxHeight: "80vh" }}
-            >
-              Your browser does not support the video tag.
-            </video>
-          </motion.div>
-        </motion.div>
-      )}
     </section>
   );
 }

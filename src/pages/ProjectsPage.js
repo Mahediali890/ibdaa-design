@@ -6,7 +6,7 @@ import { HiOutlineLocationMarker, HiArrowRight } from 'react-icons/hi';
 import projects from '../data/projects';
 import heroBg from '../assets/images/projects/ammar-residence-evening.jpg';
 
-const categories = ['All', 'Villa', 'Contemporary', 'Residential'];
+const categories = ['All', 'Architecture', 'Interior'];
 
 export default function ProjectsPage() {
   const [active, setActive] = useState('All');

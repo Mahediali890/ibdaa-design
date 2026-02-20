@@ -1,20 +1,18 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ScrollReveal from "../components/common/ScrollReveal";
 import {
   HiArrowRight,
   HiOutlineLocationMarker,
-  HiPlay,
-  HiX,
   HiOutlineOfficeBuilding,
   HiOutlineCube,
   HiOutlinePencilAlt,
+  HiOutlinePhone,
 } from "react-icons/hi";
 import heroBg from "../assets/images/projects/modern-villa-front.jpg";
 import aboutImg from "../assets/images/projects/modern-villa-angle.jpg";
 import featuredImg from "../assets/images/projects/ammar-residence-evening.jpg";
-import showreel from "../assets/videos/showreel.mp4";
 import projects from "../data/projects";
 
 const featuredServices = [
@@ -45,14 +43,6 @@ const stats = [
 const featuredProjects = projects.slice(0, 6);
 
 export default function HomePage() {
-  const [videoOpen, setVideoOpen] = useState(false);
-  const videoRef = useRef(null);
-
-  const closeVideo = () => {
-    setVideoOpen(false);
-    if (videoRef.current) videoRef.current.pause();
-  };
-
   return (
     <>
       {/* ======================== HERO ======================== */}
@@ -111,16 +101,15 @@ export default function HomePage() {
                 <Link to="/projects" className="btn-primary rounded-full">
                   Discover More <HiArrowRight />
                 </Link>
-                <button
-                  onClick={() => setVideoOpen(true)}
-                  aria-label="Watch showreel video"
+                <Link
+                  to="/contact"
                   className="btn-outline rounded-full group"
                 >
                   <span className="w-10 h-10 rounded-full border-2 border-accent flex items-center justify-center group-hover:bg-accent transition-all duration-300">
-                    <HiPlay className="text-accent group-hover:text-white ml-0.5" />
+                    <HiOutlinePhone className="text-accent group-hover:text-white" />
                   </span>
-                  Watch Showreel
-                </button>
+                  Free Consultation
+                </Link>
               </motion.div>
 
               {/* Stats Row */}
@@ -445,41 +434,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Video Modal */}
-      {videoOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="fixed inset-0 z-[100] bg-navy-950/95 flex items-center justify-center p-4 md:p-10"
-          onClick={closeVideo}
-        >
-          <button
-            onClick={closeVideo}
-            aria-label="Close video"
-            className="absolute top-6 right-6 text-white text-3xl hover:text-accent transition-colors z-10"
-          >
-            <HiX />
-          </button>
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            className="w-full max-w-5xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <video
-              ref={videoRef}
-              src={showreel}
-              controls
-              autoPlay
-              className="w-full rounded-2xl shadow-2xl"
-              style={{ maxHeight: "80vh" }}
-            >
-              Your browser does not support the video tag.
-            </video>
-          </motion.div>
-        </motion.div>
-      )}
     </>
   );
 }
