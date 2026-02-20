@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ibdaa-design/static/css/main.6ac65c3e.css",
-    "main.js": "/ibdaa-design/static/js/main.c292a405.js",
+    "main.css": "/ibdaa-design/static/css/main.cade8141.css",
+    "main.js": "/ibdaa-design/static/js/main.a0cb4aa5.js",
     "static/js/453.b5fc27aa.chunk.js": "/ibdaa-design/static/js/453.b5fc27aa.chunk.js",
     "static/media/sohel-house.jpg": "/ibdaa-design/static/media/sohel-house.28c25b59b411485c889d.jpg",
     "static/media/arabian-villa.jpg": "/ibdaa-design/static/media/arabian-villa.62f2b9874b61c3fec778.jpg",
@@ -13,12 +13,12 @@
     "static/media/ammar-residence-night.jpg": "/ibdaa-design/static/media/ammar-residence-night.7df29d2d68d51fd8f8f9.jpg",
     "static/media/modern-villa-angle.jpg": "/ibdaa-design/static/media/modern-villa-angle.909132c327871828cb37.jpg",
     "index.html": "/ibdaa-design/index.html",
-    "main.6ac65c3e.css.map": "/ibdaa-design/static/css/main.6ac65c3e.css.map",
-    "main.c292a405.js.map": "/ibdaa-design/static/js/main.c292a405.js.map",
+    "main.cade8141.css.map": "/ibdaa-design/static/css/main.cade8141.css.map",
+    "main.a0cb4aa5.js.map": "/ibdaa-design/static/js/main.a0cb4aa5.js.map",
     "453.b5fc27aa.chunk.js.map": "/ibdaa-design/static/js/453.b5fc27aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ac65c3e.css",
-    "static/js/main.c292a405.js"
+    "static/css/main.cade8141.css",
+    "static/js/main.a0cb4aa5.js"
   ]
 }
