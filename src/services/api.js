@@ -4,7 +4,7 @@
  * First submission will send a verification email — confirm it once, then all future submissions work.
  */
 
-const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/mominfarmanali292@gmail.com';
+const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/ibdaadesignstudio@gmail.com';
 
 /**
  * Contact API calls

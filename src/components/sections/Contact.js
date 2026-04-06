@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: <HiOutlineLocationMarker className="text-2xl" />,
     title: 'Visit Us',
-    lines: ['D2, City Centre Complex', 'Marida Bhagol, Nadiad', 'Gujarat 387001'],
+    lines: ['D2, City Center Complex', 'Marida Bhagol, Nadiad', 'Gujarat 387001'],
   },
   {
     icon: <HiOutlineMail className="text-2xl" />,

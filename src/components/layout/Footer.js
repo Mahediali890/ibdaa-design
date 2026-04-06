@@ -114,7 +114,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <HiOutlineLocationMarker className="text-accent text-lg mt-0.5 flex-shrink-0" />
                 <span className="font-body text-white/50 text-sm leading-relaxed">
-                  D2, City Centre Complex,<br />Marida Bhagol, Nadiad,<br />Gujarat 387001
+                  D2, City Center Complex,<br />Marida Bhagol, Nadiad,<br />Gujarat 387001
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -125,8 +125,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <HiOutlineMail className="text-accent text-lg flex-shrink-0" />
-                <a href="mailto:mominfarmanali292@gmail.com" className="font-body text-white/50 text-sm hover:text-accent transition-colors duration-300">
-                  mominfarmanali292@gmail.com
+                <a href="mailto:ibdaadesignstudio@gmail.com" className="font-body text-white/50 text-sm hover:text-accent transition-colors duration-300">
+                  ibdaadesignstudio@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
