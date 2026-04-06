@@ -96,7 +96,7 @@ export default function ContactPage() {
   const [success, setSuccess] = useState(null);
   const [error, setError] = useState(null);
   const [validationErrors, setValidationErrors] = useState({});
-  const [fieldValidated, setFieldValidated] = useState({});
+  const [, setFieldValidated] = useState({});
 
   // Auto-dismiss success/error messages after 8 seconds
   useEffect(() => {
@@ -191,7 +191,7 @@ export default function ContactPage() {
       setFormData(emptyForm);
       setFieldValidated({});
     } catch (err) {
-      setError(err.error || 'Failed to send message. Please try again.');
+      setError(err.message || 'Failed to send message. Please try again.');
     } finally {
       setLoading(false);
     }

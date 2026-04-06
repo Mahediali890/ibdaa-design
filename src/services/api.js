@@ -32,10 +32,7 @@ export const contactApi = {
       const data = await response.json();
 
       if (!data.success) {
-        throw {
-          success: false,
-          error: data.message || 'Failed to send message. Please try again.',
-        };
+        throw new Error(data.message || 'Failed to send message. Please try again.');
       }
 
       return {
@@ -43,11 +40,8 @@ export const contactApi = {
         message: 'Thank you for your message. We will get back to you within 24 hours.',
       };
     } catch (error) {
-      if (error.success === false) throw error;
-      throw {
-        success: false,
-        error: 'Network error. Please check your connection.',
-      };
+      if (error instanceof Error) throw error;
+      throw new Error('Network error. Please check your connection.');
     }
   },
 };
