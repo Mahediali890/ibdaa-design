@@ -7,6 +7,10 @@ import imgAmmarEvening from '../assets/images/projects/ammar-residence-evening.j
 import imgAmmarNight from '../assets/images/projects/ammar-residence-night.jpg';
 import imgSohelHouse from '../assets/images/projects/sohel-house.jpg';
 import imgCompactNight from '../assets/images/projects/compact-house-night.jpg';
+import imgVickeyHouseFront from '../assets/images/projects/vickey-house-front.jpg';
+import imgVickeyHouseAngle from '../assets/images/projects/vickey-house-angle.jpg';
+import imgKrishnaHouse from '../assets/images/projects/krishna-house.jpg';
+import imgSafwanHouse from '../assets/images/projects/safwan-house.jpg';
 
 const projects = [
   {
@@ -125,6 +129,58 @@ const projects = [
     description: 'The full street elevation revealing the layered massing and material harmony of this urban residence.',
     details: 'This street-level perspective reveals the full architectural composition of the contemporary residence. The layered massing creates visual depth and interest, while the harmonious use of materials — wood, stone, and glass — demonstrates a masterful understanding of proportion and texture. The design responds thoughtfully to its urban context while maintaining a distinct identity.',
     features: ['Layered Massing', 'Material Harmony', 'Urban Context', 'Street Presence', 'Proportional Design'],
+  },
+  {
+    id: 'vickey-house',
+    title: 'Vickey House',
+    category: 'Architecture',
+    tags: ['Architecture'],
+    image: imgVickeyHouseFront,
+    location: 'Nadiad, India',
+    year: '2024',
+    area: '2,800 sq ft',
+    description: 'A modern residential design featuring bold orange accents, clean geometric forms, and a striking street-corner presence.',
+    details: 'Vickey House is a contemporary residential project that commands attention with its bold use of orange accent panels against a clean white facade. The geometric massing creates visual depth, with a cantilevered upper floor adding architectural drama. Thoughtful fenestration balances privacy with natural light, while the corner-lot placement is maximized to create an impressive street presence from multiple vantage points.',
+    features: ['Bold Color Accents', 'Geometric Massing', 'Cantilevered Upper Floor', 'Corner-Lot Design', 'Modern Facade'],
+  },
+  {
+    id: 'vickey-house-angle',
+    title: 'Vickey House - Corner View',
+    category: 'Architecture',
+    tags: ['Architecture'],
+    image: imgVickeyHouseAngle,
+    location: 'Nadiad, India',
+    year: '2024',
+    area: '2,800 sq ft',
+    description: 'The corner perspective revealing the full three-dimensional composition with balcony detailing and louvered screens.',
+    details: 'From the corner, Vickey House unveils its complete architectural narrative. The interplay of solid and void becomes apparent — glass balconies with tinted railings, horizontal louver screens for ventilation, and a layered facade that steps in and out to create depth. The wooden entrance door adds warmth to the contemporary palette, grounding the design in residential comfort.',
+    features: ['Glass Balconies', 'Louvered Screens', 'Layered Facade', 'Wooden Entrance', 'Three-Dimensional Composition'],
+  },
+  {
+    id: 'krishna-house',
+    title: 'Krishna House',
+    category: 'Upcoming',
+    tags: ['Upcoming'],
+    image: imgKrishnaHouse,
+    location: 'Nadiad, India',
+    year: '2025',
+    area: '3,500 sq ft',
+    description: 'An upcoming modern residence featuring a cantilevered wooden soffit, glass balconies, and a refined contemporary facade.',
+    details: 'Krishna House is an upcoming residential project that embodies refined modern living. The striking cantilevered wooden soffit with integrated LED strip lighting creates a dramatic floating canopy effect. Stone-clad ground floor walls add texture and warmth, while expansive glass balconies on the upper level bring the outdoors in. Lush tropical landscaping completes the composition, creating a serene oasis in the heart of Nadiad.',
+    features: ['Cantilevered Wooden Soffit', 'LED Strip Lighting', 'Glass Balconies', 'Stone Cladding', 'Tropical Landscaping'],
+  },
+  {
+    id: 'safwan-house',
+    title: 'Safwan House',
+    category: 'Upcoming',
+    tags: ['Upcoming'],
+    image: imgSafwanHouse,
+    location: 'Nadiad, India',
+    year: '2025',
+    area: '2,600 sq ft',
+    description: 'An upcoming compact residence with a bold orange upper volume, clean lines, and a minimalist contemporary aesthetic.',
+    details: 'Safwan House is an upcoming project that showcases modern minimalist design with a bold architectural statement. The striking orange-clad upper floor cantilevers over a neutral ground level, creating a dynamic visual contrast. Tall narrow windows add rhythm to the facade while maximizing natural light. The stepped entrance with lush planters provides a welcoming approach to this contemporary home.',
+    features: ['Bold Color Block Design', 'Cantilevered Upper Floor', 'Minimalist Aesthetic', 'Stepped Entrance', 'Vertical Windows'],
   },
 ];
 

@@ -4,7 +4,7 @@
  * First submission will send a verification email — confirm it once, then all future submissions work.
  */
 
-const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/ibdaadesignstudio@gmail.com';
+const FORMSUBMIT_URL = "https://formsubmit.co/ajax/ibdaadesignstudio@gmail.com";
 
 /**
  * Contact API calls
@@ -14,34 +14,37 @@ export const contactApi = {
     const payload = {
       name: formData.name,
       email: formData.email,
-      phone: formData.phone || 'Not provided',
-      service: formData.service || 'Not specified',
+      phone: formData.phone || "Not provided",
+      service: formData.service || "Not specified",
       message: formData.message,
       _subject: `New Inquiry from ${formData.name} — IBDA'A Design Studio`,
-      _template: 'table',
-      _captcha: 'false',
+      _template: "table",
+      _captcha: "false",
     };
 
     try {
       const response = await fetch(FORMSUBMIT_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
       const data = await response.json();
 
       if (!data.success) {
-        throw new Error(data.message || 'Failed to send message. Please try again.');
+        throw new Error(
+          data.message || "Failed to send message. Please try again.",
+        );
       }
 
       return {
         success: true,
-        message: 'Thank you for your message. We will get back to you within 24 hours.',
+        message:
+          "Thank you for your message. We will get back to you within 24 hours.",
       };
     } catch (error) {
       if (error instanceof Error) throw error;
-      throw new Error('Network error. Please check your connection.');
+      throw new Error("Network error. Please check your connection.");
     }
   },
 };
